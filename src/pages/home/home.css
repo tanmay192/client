@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+.home {
+    height: 100vh;
+    border: 3px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.chatMenu {
+    flex: 3;
+    border-right: 2px solid rgba(158, 158, 158, 0.14);
+}
+
+.chatMenuSearch {
+    width: 100%;
+    margin-bottom: 14px;
+    display: flex;
+}
+
+.searchBar {
+    flex: 10.5;
+    margin-right: 14px;
+    display: flex;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(244, 244, 245);
+}
+
+.searchInput {
+    width: 90%;
+    padding: 14px;
+    border: none;
+    border-radius: 25px;
+    background-color: rgb(244, 244, 245);
+    font-size: 14px;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.chatMenuUserImg {
+    flex: 1.5;
+}
+
+.userImg {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.chatConversations {
+    height: 86%;
+    overflow-y: scroll;
+}
+
+.chatLogout {
+    margin: 8px 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    height: 4%;
+    background-color: #6200ee;
+    border-radius: 5px;
+    padding: 24px 20px;
+    cursor: pointer;
+}
+
+.logout {
+    margin-left: 6px;
+    color: #fff;
+}
+
+.chatBox {
+    flex: 9;
+    position: relative;
+}
+
+.chatBoxWrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.chatBoxAbove {
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.chatBoxMessages {
+    padding: 0 10%;
+}
+
+.chatBoxBelow {
+    margin-top: 10px;
+    width: 90%;
+    padding: 0 10%;
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+.chatMessageInput {
+    width: 100%;
+    max-height: fit-content;
+    min-height: 2vh;
+    height: unset;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.chatSubmitButton {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #6200ee;
+    color: #fff;
+}
+
+.chatMenuWrapper {
+    padding: 10px;
+    height: 100%;
+}
+
+.chatBoxWrapper {
+    padding: 0 10px 6px 10px;
+    height: 90%;
+}
+
+.noConversationText {
+    position: absolute;
+    top: 20%;
+    margin: 0 15%;
+    font-size: 50px;
+    color: rgb(211, 210, 210);
+    text-align: center;
+    cursor: default;
+}
+
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background: "#fff";
+    border-radius: 20px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #6200ee;
+    border-radius: 20px;
+    border: 3px solid #6200ee;
+}
